@@ -8,4 +8,10 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+
+    server: {
+        proxy: {
+            '/api': 'http://localhost:8000', // Ajuste o endereço conforme necessário
+        },
+    },
 });
