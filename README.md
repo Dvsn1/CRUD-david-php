@@ -8,63 +8,48 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+# Configuração e Execução do Projeto
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Back-end (Laravel)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Configuração:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+1. Certifique-se de ter o PHP instalado na sua máquina. Recomenda-se usar PHP 7.x ou superior.
+2. Instale o Composer ([link](https://getcomposer.org/)) para gerenciar as dependências do projeto.
+3. Clone o repositório do projeto do GitHub: `git clone https://github.com/seu-usuario/seu-projeto.git`.
+4. Navegue até o diretório do projeto: `cd seu-projeto`.
+5. Instale as dependências do Composer: `composer install`.
+6. Copie o arquivo `.env.example` para `.env` e configure as variáveis de ambiente necessárias, como a conexão com o banco de dados e a chave de criptografia.
+7. Gere uma nova chave de aplicativo: `php artisan key:generate`.
+8. Execute as migrações do banco de dados para criar as tabelas: `php artisan migrate`.
 
-## Learning Laravel
+### Execução:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+1. Inicie o servidor Laravel: `php artisan serve`.
+2. O servidor estará disponível em http://localhost:8000 por padrão.
+3. Você pode acessar os endpoints da API em http://localhost:8000/api.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Front-end (Vue.js)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Configuração:
 
-## Laravel Sponsors
+1. Certifique-se de ter o Node.js e o npm instalados na sua máquina.
+2. Clone o repositório do projeto do GitHub (se ainda não o fez).
+3. Navegue até o diretório do front-end: `cd seu-projeto/front-end`.
+4. Instale as dependências do npm: `npm install`.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### Execução:
 
-### Premium Partners
+1. Inicie o servidor de desenvolvimento Vite: `npm run dev`.
+2. O servidor estará disponível em http://localhost:3000 por padrão.
+3. Você pode acessar a aplicação web no navegador.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+## Bibliotecas e Ferramentas de Terceiros Utilizadas
 
-## Contributing
+- **Laravel:** Um framework PHP moderno e poderoso para o desenvolvimento de aplicações web robustas e escaláveis. Escolhido pela sua simplicidade, flexibilidade e rica coleção de recursos.
+- **Vue.js:** Uma biblioteca JavaScript progressiva para construir interfaces de usuário interativas. Escolhido pela sua abordagem de componentização e sua facilidade de integração com o Laravel.
+- **Vite:** Um construtor de aplicações web rápido e flexível para o ecossistema Vue.js. Escolhido pela sua velocidade de desenvolvimento e sua capacidade de integração perfeita com o Vue.js.
+- **Axios:** Um cliente HTTP baseado em Promises para fazer requisições AJAX no navegador e no Node.js. Escolhido pela sua simplicidade e facilidade de uso.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Essas são apenas algumas das bibliotecas e ferramentas de terceiros utilizadas no projeto. Cada uma foi escolhida com base nas necessidades específicas do projeto, levando em consideração a eficiência, a facilidade de uso e a comunidade de suporte.
 
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-=======
-
->>>>>>> bc8a12e1aba65fef54804c5b8e81a31ab3af6674
